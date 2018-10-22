@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom' // 把创建好的组件和虚拟dom放到页�
 
 // const myh1 = React.createElement('h1', null, 'this is h1 ..')
 const div = <div><span>777</span></div>
-ReactDOM.render(myh1, document.querySelector('#app'))
+ReactDOM.render(div, document.querySelector('#app'))
