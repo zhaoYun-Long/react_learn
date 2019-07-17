@@ -45,7 +45,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.js$/,
+        test: /\.js|jsx$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
@@ -55,5 +55,10 @@ module.exports = {
         }
       }
     ]
+  },
+  resolve: {
+    alias: {
+      "@": path.join(__dirname, './src')   // 这样，@表示项目根目录中的src的这一层路径
+    }
   }
 };
